@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Tim Smith</string>
+	<key>CFBundleDisplayName</key>
+	<string>Reddit Math Display</string>
+	<key>CFBundleIdentifier</key>
+	<string>net.tzs.safari.reddit-math-display</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>global.html</string>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>load-renderer.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Display math on Reddit using MathJax or Avital Oliver's "Tex The World"</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.reddit.com</string>
+			</array>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://dl.dropbox.com/u/20541744/safari-extensions/reddit-math-display.plist</string>
+	<key>Website</key>
+	<string>https://github.com/tzs/Reddit-Math-Display-for-Safari/wiki</string>
+</dict>
+</plist>

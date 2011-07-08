@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<script type="text/javascript">
+    function getMySetting(evt) {
+        if ( evt.name == "getSettings" ) {
+            var mySettings = [
+                    safari.extension.settings.renderer,
+                    safari.extension.settings.reddits,
+                    safari.extension.settings.mathjax,
+                    safari.extension.settings.textheworld
+                ];
+            safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("settingsArray", mySettings);
+        }
+    }
+
+    safari.application.addEventListener("message", getMySetting, false);
+</script>
+</head>
+<body></body>
+</html>

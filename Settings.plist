@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<real>1</real>
+		<key>Key</key>
+		<string>renderer</string>
+		<key>Title</key>
+		<string>Renderer</string>
+		<key>Titles</key>
+		<array>
+			<string>MathJax</string>
+			<string>Tex The World</string>
+		</array>
+		<key>Type</key>
+		<string>RadioButtons</string>
+		<key>Values</key>
+		<array>
+			<real>1</real>
+			<real>2</real>
+		</array>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<real>3</real>
+		<key>Key</key>
+		<string>reddits</string>
+		<key>Title</key>
+		<string>Reddits</string>
+		<key>Titles</key>
+		<array>
+			<string>Only in /r/math</string>
+			<string>Only in /r/*math*</string>
+			<string>Everywhere on reddit.com</string>
+		</array>
+		<key>Type</key>
+		<string>RadioButtons</string>
+		<key>Values</key>
+		<array>
+			<real>1</real>
+			<real>2</real>
+			<real>3</real>
+		</array>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default</string>
+		<key>Key</key>
+		<string>mathjax</string>
+		<key>Title</key>
+		<string>MathJax</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>http://thewe.net/tex/textheworld7.user.js</string>
+		<key>Key</key>
+		<string>textheworld</string>
+		<key>Title</key>
+		<string>Tex The World</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
+</array>
+</plist>
