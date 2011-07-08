@@ -1,21 +1,3 @@
 "Reddit Math Display" is an extension for Apple's Safari browser. It enables display of inline mathematics on Reddit.
 
-Several Reddits have adopted the convention of embedding math in comments by expressing it in a subset of LaTeX, enclosed in [; and ;] delimiters. There is a Greasemonkey plugin called "Tex The World" that converts the math to image files and displays them inline.
-
-Greasemonkey plugins are problematic on Safari, so I wrote "Reddit Math Display" as an alternative. It uses [MathJax](http://www.mathjax.org/) to render the embedded math on Reddit. There is a setting to use [Tex The World](http://thewe.net/tex/) if you prefer its rendering to that of MathJax.
-
-To install, download the extension from [here](http://dl.dropbox.com/u/20541744/safari-extensions/reddit-math-display-1.0.safariextz), then double-click on the downloaded file. That should open it with Safari, which should then ask if you want to install the extension. Allow it to install.
-
-Inline math should then work on Reddit.
-
-You can access Reddit Math Display's settings by opening Safari's preferences, and going to the "Extensions" preferences section. Click on "Reddit Math Display" and its settings should appear. The available settings are:
-
-* How to render math. Your choices are MathJax and Tex The World. Tex the World uses an external server to actually render the math and generate image files, and heavy Reddit use can tax their resources, so I'd recommend using MathJax unless you have a good reason to prefer Tex The World.
-
-    Tex The World seems to be a little more liberal in what LaTeX it accepts, so occasionally you'll find math that gets in error in MathJax. It will be obvious when this happens as MathJax renders such math as a big yellow box with an error message in it. You can then switch to Tex The World for that posting, and switch back to MathJax afterward.
-
-* Where to look for math. The default is to look on all pages. You can restrict it to just Reddits whose name starts with /r/math or whose name name has the word "math" in it, if you wish. There's probably no reason to change this setting.
-
-* The location of the MathJax JavaScript. By defaults this points to the MathJax CDN which should be fine.
-
-* The location of the Tex The World JavaScript. This is pointing to the official download for Tex The World.
+See the Wiki for more details: https://github.com/tzs/Reddit-Math-Display-for-Safari/wiki
