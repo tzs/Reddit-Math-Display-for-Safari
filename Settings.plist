@@ -46,7 +46,7 @@
 	</dict>
 	<dict>
 		<key>DefaultValue</key>
-		<string>http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default</string>
+		<string>http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML</string>
 		<key>Key</key>
 		<string>mathjax</string>
 		<key>Title</key>

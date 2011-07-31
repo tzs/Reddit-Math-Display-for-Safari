@@ -25,16 +25,23 @@ function gotSetting(evt) {
 
         if ( renderer == 1 ) {
             var script = document.createElement("script");
+            script.type = "text/x-mathjax-config";
+            script.text = "MathJax.Hub.Config({" +
+                          "  tex2jax: {" +
+                          "    inlineMath: [ ['[;', ';]' ] ]," +
+                          '    skipTags: ["script","noscript","style","textarea"]' +
+                          "  }" +
+                          "});";
+            document.getElementsByTagName("head")[0].appendChild(script);
+
+            script = document.createElement("script");
             script.type = "text/javascript";
             script.src = mathjax;
-            var config = "MathJax.Hub.Config({" +
-                         "  tex2jax: {" +
-                         "    inlineMath: [ ['[;', ';]' ] ]," +
-                         '    skipTags: ["script","noscript","style","textarea"]' +
-                         "  }" +
-                         "});" +
-                         "MathJax.Hub.Startup.onload();";
-            script.text = config;
+            document.getElementsByTagName("head")[0].appendChild(script);
+
+            script = document.createElement("script");
+            script.type = "text/javascript";
+            script.text = "MathJax.Hub.Startup.onload();"
             document.getElementsByTagName("head")[0].appendChild(script);
         } else if ( renderer == 2 ) {
             var script = document.createElement("script");
